@@ -14,35 +14,31 @@ const typeorm_1 = require("typeorm");
 let EmployeeEntity = class EmployeeEntity {
 };
 __decorate([
-    (0, typeorm_1.PrimaryGeneratedColumn)('uuid'),
-    __metadata("design:type", String)
-], EmployeeEntity.prototype, "id", void 0);
-__decorate([
-    (0, typeorm_1.Column)({ type: 'varchar', length: 300 }),
+    (0, typeorm_1.PrimaryColumn)({ type: "varchar", length: 300 }),
     __metadata("design:type", String)
 ], EmployeeEntity.prototype, "empId", void 0);
 __decorate([
-    (0, typeorm_1.Column)({ type: 'varchar', length: 300 }),
+    (0, typeorm_1.Column)({ type: "varchar", length: 300 }),
     __metadata("design:type", String)
 ], EmployeeEntity.prototype, "firstName", void 0);
 __decorate([
-    (0, typeorm_1.Column)({ type: 'varchar', length: 300 }),
+    (0, typeorm_1.Column)({ type: "varchar", length: 300 }),
     __metadata("design:type", String)
 ], EmployeeEntity.prototype, "lastName", void 0);
 __decorate([
-    (0, typeorm_1.Column)({ type: 'varchar', length: 300 }),
+    (0, typeorm_1.Column)({ type: "varchar", length: 300 }),
     __metadata("design:type", String)
 ], EmployeeEntity.prototype, "email", void 0);
 __decorate([
-    (0, typeorm_1.Column)({ type: 'varchar', length: 300 }),
+    (0, typeorm_1.Column)({ type: "varchar", length: 300 }),
     __metadata("design:type", String)
 ], EmployeeEntity.prototype, "phoneNumber", void 0);
 __decorate([
-    (0, typeorm_1.Column)({ type: 'timestamptz', default: () => 'CURRENT_TIMESTAMP' }),
+    (0, typeorm_1.Column)({ type: "timestamptz", default: () => "CURRENT_TIMESTAMP" }),
     __metadata("design:type", Date)
 ], EmployeeEntity.prototype, "dateJoined", void 0);
 EmployeeEntity = __decorate([
-    (0, typeorm_1.Entity)({ name: 'employee' })
+    (0, typeorm_1.Entity)({ name: "employee" })
 ], EmployeeEntity);
 exports.EmployeeEntity = EmployeeEntity;
 //# sourceMappingURL=employee.entity.js.map

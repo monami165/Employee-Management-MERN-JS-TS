@@ -26,13 +26,13 @@ EmployeeController = __decorate([
         },
         params: {
             id: {
-                field: 'id',
-                type: 'uuid',
+                field: "empId",
+                type: "string",
                 primary: true,
             },
         },
     }),
-    (0, common_1.Controller)('employee'),
+    (0, common_1.Controller)("employee"),
     __metadata("design:paramtypes", [employee_service_1.EmployeeService])
 ], EmployeeController);
 exports.EmployeeController = EmployeeController;
