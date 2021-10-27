@@ -20,7 +20,7 @@ const App: React.FC = () => {
   const { getEmployees } = bindActionCreators(EmployeeActions, dispatch);
 
   useEffect(() => {
-    dispatch(getEmployees());
+    getEmployees();
     setLoading(false);
   }, [currId, dispatch]);
 

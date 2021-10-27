@@ -40,7 +40,7 @@ const Form: React.FC = () => {
     if (currEmployee) setEmployee(currEmployee);
   }, [currEmployee, dispatch]);
 
-  const handleSubmit = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleSubmit = async (e: React.ChangeEvent<HTMLInputElement>) => {
     e.preventDefault();
 
     if (

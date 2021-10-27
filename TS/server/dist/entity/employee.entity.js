@@ -34,8 +34,8 @@ __decorate([
     __metadata("design:type", String)
 ], EmployeeEntity.prototype, "phoneNumber", void 0);
 __decorate([
-    (0, typeorm_1.Column)({ type: "timestamptz", default: () => "CURRENT_TIMESTAMP" }),
-    __metadata("design:type", Date)
+    (0, typeorm_1.Column)({ type: "varchar", length: 300 }),
+    __metadata("design:type", String)
 ], EmployeeEntity.prototype, "dateJoined", void 0);
 EmployeeEntity = __decorate([
     (0, typeorm_1.Entity)({ name: "employee" })

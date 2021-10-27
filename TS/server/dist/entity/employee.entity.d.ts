@@ -4,5 +4,5 @@ export declare class EmployeeEntity {
     lastName: string;
     email: string;
     phoneNumber: string;
-    dateJoined: Date;
+    dateJoined: string;
 }

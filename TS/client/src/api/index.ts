@@ -1,7 +1,7 @@
 import axios from "axios";
 import { Employee } from "../interfaces/EmployeeInterface";
 
-const url = "http://localhost:3000/employee";
+const url = "http://localhost:3001/employee";
 
 export const fetchEmployees = async () => {
   return axios.get<Employee[]>(url);

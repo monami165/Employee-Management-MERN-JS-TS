@@ -19,9 +19,10 @@ const Employee: React.FC<Props> = ({ employee }) => {
   const { deleteEmployee } = bindActionCreators(EmployeeActions, dispatch);
   const { setId } = bindActionCreators(IdActions, dispatch);
 
-  const handleClick = () => {
+  const handleClick = async () => {
     // setError(dispatch(deleteEmployee(employee.empId)).resolve);
-    dispatch(deleteEmployee(employee.empId));
+    const payload = await deleteEmployee(employee.empId);
+    dispatch(payload);
   };
 
   if (error) {
